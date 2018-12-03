@@ -1,0 +1,39 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "cn.yinguowei.demo",
+      "nativeLanguage": "en"
+    },
+    "jhipsterVersion": "5.7.0",
+    "applicationType": "monolith",
+    "baseName": "HumanResources",
+    "packageName": "cn.yinguowei.demo",
+    "packageFolder": "cn/yinguowei/demo",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "YzQxMjYyZTlmYWUyM2EzNWM4NWYwZWE2Yzk4MDVkY2U2MzkyNWU3OTNlNzE5MzNhODBjODE4ODUwYWRjNTdhMDA0YzQxYTJkZjk2NTcwYjUxNzM3M2VlMzk4NzZlNjk2NTA2NWUwNDE0ZDE4ZDMyZWI4MzBiODMwMjg2M2ZkYmQ=",
+    "clientFramework": "react",
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "otherModules": [],
+    "enableTranslation": true,
+    "nativeLanguage": "en",
+    "languages": [
+      "en",
+      "zh-cn"
+    ]
+  }
+}
