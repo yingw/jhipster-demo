@@ -2,24 +2,24 @@
   "humanResourcesApp": {
     "job": {
       "home": {
-        "title": "Jobs",
-        "createLabel": "创建新 Job",
-        "createOrEditLabel": "创建或编辑 Job"
+        "title": "岗位",
+        "createLabel": "创建新的岗位",
+        "createOrEditLabel": "创建或编辑岗位"
       },
-      "created": "Job {{ param }} 创建成功",
-      "updated": "Job {{ param }} 更新成功",
-      "deleted": "Job {{ param }} 删除成功",
+      "created": "岗位 {{ param }} 创建成功",
+      "updated": "岗位 {{ param }} 更新成功",
+      "deleted": "岗位 {{ param }} 删除成功",
       "delete": {
-        "question": "你确定要删除 Job {{ id }} 吗？"
+        "question": "你确定要删除岗位 {{ id }} 吗？"
       },
       "detail": {
-        "title": "Job"
+        "title": "岗位"
       },
-      "jobTitle": "Job Title",
-      "minSalary": "Min Salary",
-      "maxSalary": "Max Salary",
-      "employee": "Employee",
-      "task": "Task"
+      "jobTitle": "岗位名称",
+      "minSalary": "最小薪水",
+      "maxSalary": "最大薪水",
+      "employee": "员工",
+      "task": "职责"
     }
   }
 }

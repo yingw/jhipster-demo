@@ -2,31 +2,31 @@
   "humanResourcesApp": {
     "employee": {
       "home": {
-        "title": "Employees",
-        "createLabel": "创建新 Employee",
-        "createOrEditLabel": "创建或编辑 Employee"
+        "title": "员工",
+        "createLabel": "创建新的员工",
+        "createOrEditLabel": "创建或编辑员工"
       },
-      "created": "Employee {{ param }} 创建成功",
-      "updated": "Employee {{ param }} 更新成功",
-      "deleted": "Employee {{ param }} 删除成功",
+      "created": "员工 {{ param }} 创建成功",
+      "updated": "员工 {{ param }} 更新成功",
+      "deleted": "员工 {{ param }} 删除成功",
       "delete": {
-        "question": "你确定要删除 Employee {{ id }} 吗？"
+        "question": "你确定要删除员工 {{ id }} 吗？"
       },
       "detail": {
-        "title": "Employee"
+        "title": "员工"
       },
-      "firstName": "First Name",
-      "lastName": "Last Name",
+      "firstName": "名",
+      "lastName": "姓",
       "email": "Email",
-      "phoneNumber": "Phone Number",
-      "hireDate": "Hire Date",
-      "salary": "Salary",
-      "commissionPct": "Commission Pct",
-      "department": "Department",
-      "job": "Job",
-      "manager": "Manager",
+      "phoneNumber": "电话",
+      "hireDate": "入职日期",
+      "salary": "薪水",
+      "commissionPct": "佣金",
+      "department": "部门",
+      "job": "岗位",
+      "manager": "经理",
       "help": {
-        "firstName": "The firstname attribute."
+        "firstName": "用户的名字"
       }
     }
   }

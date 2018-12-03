@@ -1,20 +1,20 @@
 {
   "global": {
-    "title": "HumanResources",
+    "title": "HR",
     "browsehappy": "您目前使用<strong>过于老旧</strong>的浏览器, 建议您<a href=\"http://browsehappy.com/?locale=en\">升级浏览器</a>让您有更佳的上网体验.",
     "menu": {
       "home": "首页",
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
         "main": "数据",
-        "region": "Region",
-        "country": "Country",
-        "location": "Location",
-        "department": "Department",
-        "task": "Task",
-        "employee": "Employee",
-        "job": "Job",
-        "jobHistory": "Job History",
+        "region": "地区",
+        "country": "国家",
+        "location": "地点",
+        "department": "部门",
+        "task": "任务",
+        "employee": "员工",
+        "job": "岗位",
+        "jobHistory": "岗位记录",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {
@@ -129,15 +129,15 @@
     }
   },
   "error": {
-    "internalServerError": "Internal server error",
+    "internalServerError": "内部服务器错误",
     "server.not.reachable": "服务器无法访问",
-    "url.not.found": "Not found",
+    "url.not.found": "地址不存在",
     "NotNull": "域 {{fieldName}} 不能为空!",
     "Size": "域 {{fieldName}} 不满足最大/最小值限制!",
     "userexists": "该用户名已存在!",
     "emailexists": "该邮箱已被使用!",
     "idexists": "新建的 {{entityName}} 不能包含ID",
-    "idnull": "Invalid ID"
+    "idnull": "错误的ID"
   },
   "footer": "这里是页脚"
 }

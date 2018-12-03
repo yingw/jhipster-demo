@@ -2,22 +2,22 @@
   "humanResourcesApp": {
     "task": {
       "home": {
-        "title": "Tasks",
-        "createLabel": "创建新 Task",
-        "createOrEditLabel": "创建或编辑 Task"
+        "title": "工作任务",
+        "createLabel": "创建新的工作任务",
+        "createOrEditLabel": "创建或编辑工作任务"
       },
-      "created": "Task {{ param }} 创建成功",
-      "updated": "Task {{ param }} 更新成功",
-      "deleted": "Task {{ param }} 删除成功",
+      "created": "工作任务 {{ param }} 创建成功",
+      "updated": "工作任务 {{ param }} 更新成功",
+      "deleted": "工作任务 {{ param }} 删除成功",
       "delete": {
-        "question": "你确定要删除 Task {{ id }} 吗？"
+        "question": "你确定要删除工作任务 {{ id }} 吗？"
       },
       "detail": {
-        "title": "Task"
+        "title": "工作任务"
       },
-      "title": "Title",
-      "description": "Description",
-      "job": "Job"
+      "title": "标题",
+      "description": "描述",
+      "job": "岗位"
     }
   }
 }

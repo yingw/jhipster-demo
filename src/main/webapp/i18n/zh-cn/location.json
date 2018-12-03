@@ -2,24 +2,24 @@
   "humanResourcesApp": {
     "location": {
       "home": {
-        "title": "Locations",
-        "createLabel": "创建新 Location",
-        "createOrEditLabel": "创建或编辑 Location"
+        "title": "地点",
+        "createLabel": "创建新的地点",
+        "createOrEditLabel": "创建或编辑地点"
       },
-      "created": "Location {{ param }} 创建成功",
-      "updated": "Location {{ param }} 更新成功",
-      "deleted": "Location {{ param }} 删除成功",
+      "created": "地点 {{ param }} 创建成功",
+      "updated": "地点 {{ param }} 更新成功",
+      "deleted": "地点 {{ param }} 删除成功",
       "delete": {
-        "question": "你确定要删除 Location {{ id }} 吗？"
+        "question": "你确定要删除地点 {{ id }} 吗？"
       },
       "detail": {
-        "title": "Location"
+        "title": "地点"
       },
-      "streetAddress": "Street Address",
-      "postalCode": "Postal Code",
-      "city": "City",
-      "stateProvince": "State Province",
-      "country": "Country"
+      "streetAddress": "地址",
+      "postalCode": "邮编",
+      "city": "城市",
+      "stateProvince": "州",
+      "country": "国家"
     }
   }
 }

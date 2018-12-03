@@ -2,25 +2,25 @@
   "humanResourcesApp": {
     "jobHistory": {
       "home": {
-        "title": "Job Histories",
-        "createLabel": "创建新 Job History",
-        "createOrEditLabel": "创建或编辑 Job History"
+        "title": "岗位记录",
+        "createLabel": "创建新的岗位记录",
+        "createOrEditLabel": "创建或编辑岗位记录"
       },
-      "created": "Job History {{ param }} 创建成功",
-      "updated": "Job History {{ param }} 更新成功",
-      "deleted": "Job History {{ param }} 删除成功",
+      "created": "岗位记录 {{ param }} 创建成功",
+      "updated": "岗位记录 {{ param }} 更新成功",
+      "deleted": "岗位记录 {{ param }} 删除成功",
       "delete": {
-        "question": "你确定要删除 Job History {{ id }} 吗？"
+        "question": "你确定要删除岗位记录 {{ id }} 吗？"
       },
       "detail": {
-        "title": "Job History"
+        "title": "岗位记录"
       },
-      "startDate": "Start Date",
-      "endDate": "End Date",
-      "language": "Language",
-      "job": "Job",
-      "department": "Department",
-      "employee": "Employee"
+      "startDate": "开始日期",
+      "endDate": "结束日期",
+      "language": "语言",
+      "job": "岗位",
+      "department": "部门",
+      "employee": "员工"
     }
   }
 }

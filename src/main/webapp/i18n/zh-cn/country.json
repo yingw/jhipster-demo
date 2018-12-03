@@ -2,21 +2,21 @@
   "humanResourcesApp": {
     "country": {
       "home": {
-        "title": "Countries",
-        "createLabel": "创建新 Country",
-        "createOrEditLabel": "创建或编辑 Country"
+        "title": "国家",
+        "createLabel": "创建新的国家",
+        "createOrEditLabel": "创建或编辑国家"
       },
-      "created": "Country {{ param }} 创建成功",
-      "updated": "Country {{ param }} 更新成功",
-      "deleted": "Country {{ param }} 删除成功",
+      "created": "国家 {{ param }} 创建成功",
+      "updated": "国家 {{ param }} 更新成功",
+      "deleted": "国家 {{ param }} 删除成功",
       "delete": {
-        "question": "你确定要删除 Country {{ id }} 吗？"
+        "question": "你确定要删除国家 {{ id }} 吗？"
       },
       "detail": {
-        "title": "Country"
+        "title": "国家"
       },
-      "countryName": "Country Name",
-      "region": "Region"
+      "countryName": "国家",
+      "region": "地区"
     }
   }
 }
