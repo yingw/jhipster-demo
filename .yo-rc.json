@@ -2,7 +2,7 @@
   "generator-jhipster": {
     "promptValues": {
       "packageName": "cn.yinguowei.demo",
-      "nativeLanguage": "en"
+      "nativeLanguage": "zh-cn"
     },
     "jhipsterVersion": "5.7.0",
     "applicationType": "monolith",
@@ -30,10 +30,10 @@
     "jhiPrefix": "jhi",
     "otherModules": [],
     "enableTranslation": true,
-    "nativeLanguage": "en",
+    "nativeLanguage": "zh-cn",
     "languages": [
-      "en",
-      "zh-cn"
+      "zh-cn",
+      "en"
     ]
   }
 }

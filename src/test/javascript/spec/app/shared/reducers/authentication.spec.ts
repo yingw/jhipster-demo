@@ -154,7 +154,7 @@ describe('Authentication reducer tests', () => {
     const resolvedObject = { value: 'whatever' };
     beforeEach(() => {
       const mockStore = configureStore([thunk, promiseMiddleware()]);
-      store = mockStore({ authentication: { account: { langKey: 'en' } } });
+      store = mockStore({ authentication: { account: { langKey: 'zh-cn' } } });
       axios.get = sinon.stub().returns(Promise.resolve(resolvedObject));
     });
 
@@ -169,7 +169,7 @@ describe('Authentication reducer tests', () => {
         },
         {
           type: localeActionTypes.SET_LOCALE,
-          locale: 'en'
+          locale: 'zh-cn'
         }
       ];
       await store.dispatch(getSession()).then(() => expect(store.getActions()).toEqual(expectedActions));
@@ -219,7 +219,7 @@ describe('Authentication reducer tests', () => {
         },
         {
           type: localeActionTypes.SET_LOCALE,
-          locale: 'en'
+          locale: 'zh-cn'
         }
       ];
       await store.dispatch(login('test', 'test')).then(() => expect(store.getActions()).toEqual(expectedActions));
@@ -229,7 +229,7 @@ describe('Authentication reducer tests', () => {
     let store;
     beforeEach(() => {
       const mockStore = configureStore([thunk, promiseMiddleware()]);
-      store = mockStore({ authentication: { account: { langKey: 'en' } } });
+      store = mockStore({ authentication: { account: { langKey: 'zh-cn' } } });
     });
     it('clears the session token on clearAuthToken', async () => {
       const AUTH_TOKEN_KEY = 'jhi-authenticationToken';
