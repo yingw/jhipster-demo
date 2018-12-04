@@ -128,11 +128,17 @@ export class JobHistory extends React.Component<IJobHistoryProps, IJobHistorySta
                     <td>
                       <Translate contentKey={`humanResourcesApp.Language.${jobHistory.language}`} />
                     </td>
-                    <td>{jobHistory.job ? <Link to={`job/${jobHistory.job.id}`}>{jobHistory.job.id}</Link> : ''}</td>
+                    <td>{jobHistory.job ? <Link to={`job/${jobHistory.job.id}`}>{jobHistory.job.jobTitle}</Link> : ''}</td>
                     <td>
-                      {jobHistory.department ? <Link to={`department/${jobHistory.department.id}`}>{jobHistory.department.id}</Link> : ''}
+                      {jobHistory.department ? (
+                        <Link to={`department/${jobHistory.department.id}`}>{jobHistory.department.departmentName}</Link>
+                      ) : (
+                        ''
+                      )}
                     </td>
-                    <td>{jobHistory.employee ? <Link to={`employee/${jobHistory.employee.id}`}>{jobHistory.employee.id}</Link> : ''}</td>
+                    <td>
+                      {jobHistory.employee ? <Link to={`employee/${jobHistory.employee.id}`}>{jobHistory.employee.firstName}</Link> : ''}
+                    </td>
                     <td className="text-right">
                       <div className="btn-group flex-btn-group-container">
                         <Button tag={Link} to={`${match.url}/${jobHistory.id}`} color="info" size="sm">

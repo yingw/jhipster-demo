@@ -151,7 +151,7 @@ export class EmployeeUpdate extends React.Component<IEmployeeUpdateProps, IEmplo
                   <AvField id="employee-commissionPct" type="string" className="form-control" name="commissionPct" />
                 </AvGroup>
                 <AvGroup>
-                  <Label for="department.id">
+                  <Label for="department.departmentName">
                     <Translate contentKey="humanResourcesApp.employee.department">Department</Translate>
                   </Label>
                   <AvInput id="employee-department" type="select" className="form-control" name="department.id">
@@ -159,14 +159,14 @@ export class EmployeeUpdate extends React.Component<IEmployeeUpdateProps, IEmplo
                     {departments
                       ? departments.map(otherEntity => (
                           <option value={otherEntity.id} key={otherEntity.id}>
-                            {otherEntity.id}
+                            {otherEntity.departmentName}
                           </option>
                         ))
                       : null}
                   </AvInput>
                 </AvGroup>
                 <AvGroup>
-                  <Label for="manager.id">
+                  <Label for="manager.firstName">
                     <Translate contentKey="humanResourcesApp.employee.manager">Manager</Translate>
                   </Label>
                   <AvInput id="employee-manager" type="select" className="form-control" name="manager.id">
@@ -174,7 +174,7 @@ export class EmployeeUpdate extends React.Component<IEmployeeUpdateProps, IEmplo
                     {employees
                       ? employees.map(otherEntity => (
                           <option value={otherEntity.id} key={otherEntity.id}>
-                            {otherEntity.id}
+                            {otherEntity.firstName}
                           </option>
                         ))
                       : null}

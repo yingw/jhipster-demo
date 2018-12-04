@@ -37,7 +37,7 @@ export class CountryDetail extends React.Component<ICountryDetailProps> {
             <dt>
               <Translate contentKey="humanResourcesApp.country.region">Region</Translate>
             </dt>
-            <dd>{countryEntity.region ? countryEntity.region.id : ''}</dd>
+            <dd>{countryEntity.region ? countryEntity.region.regionName : ''}</dd>
           </dl>
           <Button tag={Link} to="/entity/country" replace color="info">
             <FontAwesomeIcon icon="arrow-left" />{' '}

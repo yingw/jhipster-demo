@@ -120,7 +120,7 @@ export class JobUpdate extends React.Component<IJobUpdateProps, IJobUpdateState>
                   <AvField id="job-maxSalary" type="string" className="form-control" name="maxSalary" />
                 </AvGroup>
                 <AvGroup>
-                  <Label for="employee.id">
+                  <Label for="employee.firstName">
                     <Translate contentKey="humanResourcesApp.job.employee">Employee</Translate>
                   </Label>
                   <AvInput id="job-employee" type="select" className="form-control" name="employee.id">
@@ -128,7 +128,7 @@ export class JobUpdate extends React.Component<IJobUpdateProps, IJobUpdateState>
                     {employees
                       ? employees.map(otherEntity => (
                           <option value={otherEntity.id} key={otherEntity.id}>
-                            {otherEntity.id}
+                            {otherEntity.firstName}
                           </option>
                         ))
                       : null}

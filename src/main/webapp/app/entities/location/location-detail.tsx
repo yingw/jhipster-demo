@@ -55,7 +55,7 @@ export class LocationDetail extends React.Component<ILocationDetailProps> {
             <dt>
               <Translate contentKey="humanResourcesApp.location.country">Country</Translate>
             </dt>
-            <dd>{locationEntity.country ? locationEntity.country.id : ''}</dd>
+            <dd>{locationEntity.country ? locationEntity.country.countryName : ''}</dd>
           </dl>
           <Button tag={Link} to="/entity/location" replace color="info">
             <FontAwesomeIcon icon="arrow-left" />{' '}

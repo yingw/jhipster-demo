@@ -19,7 +19,7 @@
             "relationshipName": "employee",
             "otherEntityName": "employee",
             "relationshipType": "many-to-one",
-            "otherEntityField": "id"
+            "otherEntityField": "firstName"
         },
         {
             "relationshipType": "many-to-many",

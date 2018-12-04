@@ -49,7 +49,7 @@ export class JobDetail extends React.Component<IJobDetailProps> {
             <dt>
               <Translate contentKey="humanResourcesApp.job.employee">Employee</Translate>
             </dt>
-            <dd>{jobEntity.employee ? jobEntity.employee.id : ''}</dd>
+            <dd>{jobEntity.employee ? jobEntity.employee.firstName : ''}</dd>
             <dt>
               <Translate contentKey="humanResourcesApp.job.task">Task</Translate>
             </dt>

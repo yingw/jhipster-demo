@@ -109,7 +109,7 @@ export class DepartmentUpdate extends React.Component<IDepartmentUpdateProps, ID
                   />
                 </AvGroup>
                 <AvGroup>
-                  <Label for="location.id">
+                  <Label for="location.city">
                     <Translate contentKey="humanResourcesApp.department.location">Location</Translate>
                   </Label>
                   <AvInput id="department-location" type="select" className="form-control" name="location.id">
@@ -117,7 +117,7 @@ export class DepartmentUpdate extends React.Component<IDepartmentUpdateProps, ID
                     {locations
                       ? locations.map(otherEntity => (
                           <option value={otherEntity.id} key={otherEntity.id}>
-                            {otherEntity.id}
+                            {otherEntity.city}
                           </option>
                         ))
                       : null}

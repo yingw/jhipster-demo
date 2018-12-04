@@ -56,7 +56,7 @@ export class Department extends React.Component<IDepartmentProps> {
                     </Button>
                   </td>
                   <td>{department.departmentName}</td>
-                  <td>{department.location ? <Link to={`location/${department.location.id}`}>{department.location.id}</Link> : ''}</td>
+                  <td>{department.location ? <Link to={`location/${department.location.id}`}>{department.location.city}</Link> : ''}</td>
                   <td className="text-right">
                     <div className="btn-group flex-btn-group-container">
                       <Button tag={Link} to={`${match.url}/${department.id}`} color="info" size="sm">

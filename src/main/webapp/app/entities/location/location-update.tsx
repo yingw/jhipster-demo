@@ -120,7 +120,7 @@ export class LocationUpdate extends React.Component<ILocationUpdateProps, ILocat
                   <AvField id="location-stateProvince" type="text" name="stateProvince" />
                 </AvGroup>
                 <AvGroup>
-                  <Label for="country.id">
+                  <Label for="country.countryName">
                     <Translate contentKey="humanResourcesApp.location.country">Country</Translate>
                   </Label>
                   <AvInput id="location-country" type="select" className="form-control" name="country.id">
@@ -128,7 +128,7 @@ export class LocationUpdate extends React.Component<ILocationUpdateProps, ILocat
                     {countries
                       ? countries.map(otherEntity => (
                           <option value={otherEntity.id} key={otherEntity.id}>
-                            {otherEntity.id}
+                            {otherEntity.countryName}
                           </option>
                         ))
                       : null}

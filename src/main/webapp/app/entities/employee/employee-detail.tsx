@@ -78,11 +78,11 @@ export class EmployeeDetail extends React.Component<IEmployeeDetailProps> {
             <dt>
               <Translate contentKey="humanResourcesApp.employee.department">Department</Translate>
             </dt>
-            <dd>{employeeEntity.department ? employeeEntity.department.id : ''}</dd>
+            <dd>{employeeEntity.department ? employeeEntity.department.departmentName : ''}</dd>
             <dt>
               <Translate contentKey="humanResourcesApp.employee.manager">Manager</Translate>
             </dt>
-            <dd>{employeeEntity.manager ? employeeEntity.manager.id : ''}</dd>
+            <dd>{employeeEntity.manager ? employeeEntity.manager.firstName : ''}</dd>
           </dl>
           <Button tag={Link} to="/entity/employee" replace color="info">
             <FontAwesomeIcon icon="arrow-left" />{' '}

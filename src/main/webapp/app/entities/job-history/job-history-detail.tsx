@@ -53,15 +53,15 @@ export class JobHistoryDetail extends React.Component<IJobHistoryDetailProps> {
             <dt>
               <Translate contentKey="humanResourcesApp.jobHistory.job">Job</Translate>
             </dt>
-            <dd>{jobHistoryEntity.job ? jobHistoryEntity.job.id : ''}</dd>
+            <dd>{jobHistoryEntity.job ? jobHistoryEntity.job.jobTitle : ''}</dd>
             <dt>
               <Translate contentKey="humanResourcesApp.jobHistory.department">Department</Translate>
             </dt>
-            <dd>{jobHistoryEntity.department ? jobHistoryEntity.department.id : ''}</dd>
+            <dd>{jobHistoryEntity.department ? jobHistoryEntity.department.departmentName : ''}</dd>
             <dt>
               <Translate contentKey="humanResourcesApp.jobHistory.employee">Employee</Translate>
             </dt>
-            <dd>{jobHistoryEntity.employee ? jobHistoryEntity.employee.id : ''}</dd>
+            <dd>{jobHistoryEntity.employee ? jobHistoryEntity.employee.firstName : ''}</dd>
           </dl>
           <Button tag={Link} to="/entity/job-history" replace color="info">
             <FontAwesomeIcon icon="arrow-left" />{' '}

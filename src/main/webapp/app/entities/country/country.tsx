@@ -56,7 +56,7 @@ export class Country extends React.Component<ICountryProps> {
                     </Button>
                   </td>
                   <td>{country.countryName}</td>
-                  <td>{country.region ? <Link to={`region/${country.region.id}`}>{country.region.id}</Link> : ''}</td>
+                  <td>{country.region ? <Link to={`region/${country.region.id}`}>{country.region.regionName}</Link> : ''}</td>
                   <td className="text-right">
                     <div className="btn-group flex-btn-group-container">
                       <Button tag={Link} to={`${match.url}/${country.id}`} color="info" size="sm">

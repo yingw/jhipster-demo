@@ -14,7 +14,7 @@
             "relationshipType": "one-to-one",
             "relationshipName": "location",
             "otherEntityName": "location",
-            "otherEntityField": "id",
+            "otherEntityField": "city",
             "ownerSide": true,
             "otherEntityRelationshipName": "department"
         },

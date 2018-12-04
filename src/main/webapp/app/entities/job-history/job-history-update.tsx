@@ -153,7 +153,7 @@ export class JobHistoryUpdate extends React.Component<IJobHistoryUpdateProps, IJ
                   </AvInput>
                 </AvGroup>
                 <AvGroup>
-                  <Label for="job.id">
+                  <Label for="job.jobTitle">
                     <Translate contentKey="humanResourcesApp.jobHistory.job">Job</Translate>
                   </Label>
                   <AvInput id="job-history-job" type="select" className="form-control" name="job.id">
@@ -161,14 +161,14 @@ export class JobHistoryUpdate extends React.Component<IJobHistoryUpdateProps, IJ
                     {jobs
                       ? jobs.map(otherEntity => (
                           <option value={otherEntity.id} key={otherEntity.id}>
-                            {otherEntity.id}
+                            {otherEntity.jobTitle}
                           </option>
                         ))
                       : null}
                   </AvInput>
                 </AvGroup>
                 <AvGroup>
-                  <Label for="department.id">
+                  <Label for="department.departmentName">
                     <Translate contentKey="humanResourcesApp.jobHistory.department">Department</Translate>
                   </Label>
                   <AvInput id="job-history-department" type="select" className="form-control" name="department.id">
@@ -176,14 +176,14 @@ export class JobHistoryUpdate extends React.Component<IJobHistoryUpdateProps, IJ
                     {departments
                       ? departments.map(otherEntity => (
                           <option value={otherEntity.id} key={otherEntity.id}>
-                            {otherEntity.id}
+                            {otherEntity.departmentName}
                           </option>
                         ))
                       : null}
                   </AvInput>
                 </AvGroup>
                 <AvGroup>
-                  <Label for="employee.id">
+                  <Label for="employee.firstName">
                     <Translate contentKey="humanResourcesApp.jobHistory.employee">Employee</Translate>
                   </Label>
                   <AvInput id="job-history-employee" type="select" className="form-control" name="employee.id">
@@ -191,7 +191,7 @@ export class JobHistoryUpdate extends React.Component<IJobHistoryUpdateProps, IJ
                     {employees
                       ? employees.map(otherEntity => (
                           <option value={otherEntity.id} key={otherEntity.id}>
-                            {otherEntity.id}
+                            {otherEntity.firstName}
                           </option>
                         ))
                       : null}

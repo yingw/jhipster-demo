@@ -138,8 +138,14 @@ export class Employee extends React.Component<IEmployeeProps, IEmployeeState> {
                     </td>
                     <td>{employee.salary}</td>
                     <td>{employee.commissionPct}</td>
-                    <td>{employee.department ? <Link to={`department/${employee.department.id}`}>{employee.department.id}</Link> : ''}</td>
-                    <td>{employee.manager ? <Link to={`employee/${employee.manager.id}`}>{employee.manager.id}</Link> : ''}</td>
+                    <td>
+                      {employee.department ? (
+                        <Link to={`department/${employee.department.id}`}>{employee.department.departmentName}</Link>
+                      ) : (
+                        ''
+                      )}
+                    </td>
+                    <td>{employee.manager ? <Link to={`employee/${employee.manager.id}`}>{employee.manager.firstName}</Link> : ''}</td>
                     <td className="text-right">
                       <div className="btn-group flex-btn-group-container">
                         <Button tag={Link} to={`${match.url}/${employee.id}`} color="info" size="sm">

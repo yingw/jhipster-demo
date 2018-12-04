@@ -37,7 +37,7 @@ export class DepartmentDetail extends React.Component<IDepartmentDetailProps> {
             <dt>
               <Translate contentKey="humanResourcesApp.department.location">Location</Translate>
             </dt>
-            <dd>{departmentEntity.location ? departmentEntity.location.id : ''}</dd>
+            <dd>{departmentEntity.location ? departmentEntity.location.city : ''}</dd>
           </dl>
           <Button tag={Link} to="/entity/department" replace color="info">
             <FontAwesomeIcon icon="arrow-left" />{' '}

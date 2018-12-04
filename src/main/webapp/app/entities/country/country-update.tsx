@@ -102,7 +102,7 @@ export class CountryUpdate extends React.Component<ICountryUpdateProps, ICountry
                   <AvField id="country-countryName" type="text" name="countryName" />
                 </AvGroup>
                 <AvGroup>
-                  <Label for="region.id">
+                  <Label for="region.regionName">
                     <Translate contentKey="humanResourcesApp.country.region">Region</Translate>
                   </Label>
                   <AvInput id="country-region" type="select" className="form-control" name="region.id">
@@ -110,7 +110,7 @@ export class CountryUpdate extends React.Component<ICountryUpdateProps, ICountry
                     {regions
                       ? regions.map(otherEntity => (
                           <option value={otherEntity.id} key={otherEntity.id}>
-                            {otherEntity.id}
+                            {otherEntity.regionName}
                           </option>
                         ))
                       : null}
