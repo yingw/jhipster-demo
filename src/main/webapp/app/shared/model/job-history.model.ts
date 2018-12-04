@@ -4,9 +4,8 @@ import { IDepartment } from 'app/shared/model//department.model';
 import { IEmployee } from 'app/shared/model//employee.model';
 
 export const enum Language {
-  FRENCH = 'FRENCH',
-  ENGLISH = 'ENGLISH',
-  SPANISH = 'SPANISH'
+  CHINESE = 'CHINESE',
+  ENGLISH = 'ENGLISH'
 }
 
 export interface IJobHistory {

@@ -2,9 +2,8 @@
   "humanResourcesApp": {
     "Language": {
       "null": "",
-      "FRENCH": "FRENCH",
-      "ENGLISH": "ENGLISH",
-      "SPANISH": "SPANISH"
+      "CHINESE": "中文",
+      "ENGLISH": "ENGLISH"
     }
   }
 }

@@ -16,8 +16,8 @@
         "title": "Department"
       },
       "departmentName": "Department Name",
-      "location": "Location",
-      "employee": "Employee"
+      "employee": "Employee",
+      "location": "Location"
     }
   }
 }

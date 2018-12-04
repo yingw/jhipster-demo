@@ -1,6 +1,7 @@
 package cn.yinguowei.demo.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import io.swagger.annotations.ApiModelProperty;
 import org.hibernate.annotations.Cache;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
@@ -31,9 +32,6 @@ public class Department implements Serializable {
     @Column(name = "department_name", nullable = false)
     private String departmentName;
 
-    @OneToOne    @JoinColumn(unique = true)
-    private Location location;
-
     /**
      * A relationship
      */
@@ -41,6 +39,10 @@ public class Department implements Serializable {
     @OneToMany(mappedBy = "department")
     @Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)
     private Set<Employee> employees = new HashSet<>();
+    @ManyToOne
+    @JsonIgnoreProperties("")
+    private Location location;
+
     // jhipster-needle-entity-add-field - JHipster will add fields here, do not remove
     public Long getId() {
         return id;
@@ -61,19 +63,6 @@ public class Department implements Serializable {
 
     public void setDepartmentName(String departmentName) {
         this.departmentName = departmentName;
-    }
-
-    public Location getLocation() {
-        return location;
-    }
-
-    public Department location(Location location) {
-        this.location = location;
-        return this;
-    }
-
-    public void setLocation(Location location) {
-        this.location = location;
     }
 
     public Set<Employee> getEmployees() {
@@ -99,6 +88,19 @@ public class Department implements Serializable {
 
     public void setEmployees(Set<Employee> employees) {
         this.employees = employees;
+    }
+
+    public Location getLocation() {
+        return location;
+    }
+
+    public Department location(Location location) {
+        this.location = location;
+        return this;
+    }
+
+    public void setLocation(Location location) {
+        this.location = location;
     }
     // jhipster-needle-entity-add-getters-setters - JHipster will add getters and setters here, do not remove
 

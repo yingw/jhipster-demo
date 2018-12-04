@@ -1,5 +1,6 @@
 package cn.yinguowei.demo.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.hibernate.annotations.Cache;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
 
@@ -25,7 +26,8 @@ public class Country implements Serializable {
     @Column(name = "country_name")
     private String countryName;
 
-    @OneToOne    @JoinColumn(unique = true)
+    @ManyToOne
+    @JsonIgnoreProperties("")
     private Region region;
 
     // jhipster-needle-entity-add-field - JHipster will add fields here, do not remove

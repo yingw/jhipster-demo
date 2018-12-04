@@ -11,19 +11,17 @@
     ],
     "relationships": [
         {
-            "relationshipType": "one-to-one",
-            "relationshipName": "location",
-            "otherEntityName": "location",
-            "otherEntityField": "city",
-            "ownerSide": true,
-            "otherEntityRelationshipName": "department"
-        },
-        {
             "relationshipType": "one-to-many",
             "javadoc": "A relationship",
             "relationshipName": "employee",
             "otherEntityName": "employee",
             "otherEntityRelationshipName": "department"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "location",
+            "otherEntityName": "location",
+            "otherEntityField": "city"
         }
     ],
     "changelogDate": "20181203081032",

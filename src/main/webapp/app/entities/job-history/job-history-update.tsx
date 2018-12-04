@@ -139,16 +139,13 @@ export class JobHistoryUpdate extends React.Component<IJobHistoryUpdateProps, IJ
                     type="select"
                     className="form-control"
                     name="language"
-                    value={(!isNew && jobHistoryEntity.language) || 'FRENCH'}
+                    value={(!isNew && jobHistoryEntity.language) || 'CHINESE'}
                   >
-                    <option value="FRENCH">
-                      <Translate contentKey="humanResourcesApp.Language.FRENCH" />
+                    <option value="CHINESE">
+                      <Translate contentKey="humanResourcesApp.Language.CHINESE" />
                     </option>
                     <option value="ENGLISH">
                       <Translate contentKey="humanResourcesApp.Language.ENGLISH" />
-                    </option>
-                    <option value="SPANISH">
-                      <Translate contentKey="humanResourcesApp.Language.SPANISH" />
                     </option>
                   </AvInput>
                 </AvGroup>

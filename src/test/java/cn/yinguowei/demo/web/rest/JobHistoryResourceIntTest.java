@@ -49,7 +49,7 @@ public class JobHistoryResourceIntTest {
     private static final Instant DEFAULT_END_DATE = Instant.ofEpochMilli(0L);
     private static final Instant UPDATED_END_DATE = Instant.now().truncatedTo(ChronoUnit.MILLIS);
 
-    private static final Language DEFAULT_LANGUAGE = Language.FRENCH;
+    private static final Language DEFAULT_LANGUAGE = Language.CHINESE;
     private static final Language UPDATED_LANGUAGE = Language.ENGLISH;
 
     @Autowired
