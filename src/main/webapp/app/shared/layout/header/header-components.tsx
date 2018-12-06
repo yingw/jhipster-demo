@@ -21,7 +21,7 @@ export const NavDropdown = props => (
 
 export const BrandIcon = props => (
   <div {...props} className="brand-icon">
-    <img src="content/images/logo-jhipster-react.svg" alt="Logo" />
+    <img src="content/images/jhipster_family_member_3_head.svg" alt="Logo" />
   </div>
 );
 
@@ -41,6 +41,28 @@ export const Home = props => (
       <FontAwesomeIcon icon="home" />
       <span>
         <Translate contentKey="global.menu.home">Home</Translate>
+      </span>
+    </NavLink>
+  </NavItem>
+);
+
+export const Employee = props => (
+  <NavItem>
+    <NavLink tag={Link} to="/entity/employee" className="d-flex align-items-center">
+      <FontAwesomeIcon icon="user" />
+      <span>
+        <Translate contentKey="global.menu.entities.employee">Employee</Translate>
+      </span>
+    </NavLink>
+  </NavItem>
+);
+
+export const Job = props => (
+  <NavItem>
+    <NavLink tag={Link} to="/entity/job" className="d-flex align-items-center">
+      <FontAwesomeIcon icon="tasks" />
+      <span>
+        <Translate contentKey="global.menu.entities.job">Job</Translate>
       </span>
     </NavLink>
   </NavItem>
