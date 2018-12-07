@@ -11,8 +11,8 @@ jdk:
   - openjdk8
 
 script:
-  - mvn clean
-  - npm test
+  - mvn clean install
+  - ./node/npm test
   - mvn test sonar:sonar
 
 cache:
